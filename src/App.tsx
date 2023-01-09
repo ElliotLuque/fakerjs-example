@@ -42,8 +42,8 @@ function App() {
   }
 
   return (
-    <div className='flex flex-col justify-center w-screen h-screen'>
-      <header className='flex justify-end w-full pt-8 px-16 bg-white dark:bg-gray-900'>
+    <div className='flex flex-col justify-center w-screen h-screen bg-white dark:bg-gray-900'>
+      <header className='flex justify-end w-full pt-8 px-16 '>
         {isDarkTheme ? (
           <SunIcon
             className='h-10 w-10 text-white m-4 cursor-pointer'
@@ -56,7 +56,7 @@ function App() {
           />
         )}
       </header>
-      <main className='flex justify-center w-full h-full items-center bg-white dark:bg-gray-900'>
+      <main className='flex justify-center w-full h-full items-center'>
         <div className='flex flex-col items-center justify-start md: gap-16 lg:gap-20 xl:gap-32'>
           <h1 className='text-6xl text-gray-900 dark:text-white font-extrabold leading-none tracking-tight'>
             User generator with Faker.js
