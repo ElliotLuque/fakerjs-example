@@ -6,11 +6,18 @@ const JsonView: React.FC<{ userData: User }> = ({
     id: 'ecf6891a-7b08-4753-ba0f-37438184147c',
     name: 'Ursula',
     lastname: 'Reinger',
+    avatar:
+      'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/950.jpg',
     birthDate: '1975-07-21T10:46:35.377Z',
     email: 'Ursula4@hotmail.com',
     phoneNumber: '+34 629 307 328',
     favouriteMusicGenre: 'Rock',
     originCountry: 'Turks and Caicos Islands',
+    address: {
+      street: '6457 Cielo Mews',
+      zipcode: '91178-7182',
+      country: 'Haiti',
+    },
   },
 }) => {
   return (

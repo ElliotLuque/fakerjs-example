@@ -19,11 +19,17 @@ function App() {
       id: faker.datatype.uuid(),
       name: name,
       lastname: lastname,
+      avatar: faker.image.avatar(),
       birthDate: faker.date.birthdate(),
       email: faker.internet.email(name, lastname),
       phoneNumber: faker.phone.number('+34 6## ### ###'),
       favouriteMusicGenre: faker.music.genre(),
       originCountry: faker.address.country(),
+      address: {
+        street: faker.address.streetAddress(),
+        zipcode: faker.address.zipCode(),
+        country: faker.address.country(),
+      },
     }
 
     return user
@@ -45,7 +51,7 @@ function App() {
           />
         ) : (
           <MoonIcon
-            className='h-10 w-10 text-gray-800 m-4 cursor-pointer'
+            className='h-10 w-10 text-gray-700 m-4 cursor-pointer'
             onClick={() => setDarkTheme(true)}
           />
         )}
